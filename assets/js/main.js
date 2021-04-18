@@ -82,17 +82,6 @@
     }
   });
 
-  setTimeout(() => {
-    let ele = document.getElementsByClassName("active");
-    let portfolioContainer = select("#portfolio-grid");
-    let portfolioIsotope = new Isotope(portfolioContainer, {
-      itemSelector: ".item",
-    });
-    portfolioIsotope.arrange({
-      filter: ele[0].getAttribute("data-filter"),
-    });
-  }, 5000);
-
   /**
    * Testimonials slider
    */
